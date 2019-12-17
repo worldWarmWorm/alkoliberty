@@ -1,0 +1,310 @@
+@media screen and (max-width: 1199px) {
+
+    .header-inner,
+    .main-menu,
+    .catalog-left-content {
+        display: none !important;
+    }
+
+    .header-inner-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100px;
+
+        .head {
+            display: flex;
+            max-width: 70%;
+            width: 100%;
+
+            .slogan {
+                margin-left: 20px;
+            }
+        }
+
+        .feet {
+            display: flex;
+            max-width: 30%;
+            width: 100%;
+            justify-content: flex-end;
+
+            .call-number,
+            .basket {
+                margin-right: 20px;
+            }
+        }
+
+    }
+
+    .mobile-menu {
+        display: block;
+
+        a.btn-icon {
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-color: #91C53C;
+            background-image: url(../img/burger.svg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            z-index: 10;
+        }
+    }
+
+    .menu-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+
+        .btn-icon {
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-color: #91C53C;
+            background-image: url(../img/burger.svg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            z-index: 10;
+        }
+
+        .whats {
+            position: relative;
+
+            &:after {
+                content: '';
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                top: 7px;
+                left: 27px;
+                background-image: url(../img/wats.svg);
+                background-position: 0% 50%;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 170px;
+                height: 40px;
+                background-color: #91C53C;
+
+                color: #fff;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                padding-left: 25px;
+                position: relative;
+            }
+        }
+    }
+
+    .catalog .catalog-right-content {
+        max-width: initial;
+        margin-left: 0;
+
+        .catalog-items {
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .sub-catalog-items {
+        justify-content: center;
+    }
+
+    .sub-catalog-item {
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .banner-content-left {
+        display: none;
+    }
+
+    .banner-content-right .law {
+        min-width: 200px;
+
+        h3 {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .header-inner-mobile {
+        padding: 15px 0;
+    }
+
+    .header-inner-mobile .head,
+    .header-inner-mobile .feet {
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 80px;
+    }
+
+    .head {
+        align-items: flex-start;
+    }
+
+    .feet {
+        align-items: flex-end;
+    }
+
+    .header-inner-mobile .feet .call-number {
+        margin-right: 0;
+    }
+
+    .header-inner-mobile .head .slogan {
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .footer .footer-inner {
+        flex-direction: column;
+        text-align: center;
+        min-height: 190px;
+
+        h2 {
+            margin-bottom: 8px;
+        }
+    }
+
+    .copy {
+        min-height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer {
+        padding: 45px 0 20px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .banner-content-right .law {
+        padding: 0;
+        min-height: 100px;
+
+        h3 {
+            padding: 15px 15px 0 15px;
+            text-align: center;
+        }
+
+        a {
+            padding-left: 117px;
+            padding-top: 6px;
+        }
+    }
+
+    .catalog .catalog-right-content .catalog-items .cart {
+        margin: 0;
+    }
+
+    .sub-catalog-title h1 {
+        margin: 25px 0 10px;
+    }
+
+    .banner {
+        min-height: 288px;
+    }
+
+    .banner-content-right .law h3 {
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    .header-inner-mobile {
+        display: none;
+    }
+
+    .header-inner-mobile-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        min-height: 169px;
+        padding: 20px;
+
+        .slogan {
+            font-size: 11px;
+            line-height: 16px;
+            margin: 17px 0 17px;
+        }
+
+        .bottom-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            .call-number {
+                display: flex;
+                flex-direction: column;
+
+                .number {
+                    padding-left: 20px;
+                    background: url(../img/phone-ico.svg) no-repeat 0% 50%;
+                }
+
+                .recall {
+                    display: inline-block;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #5271FF;
+                    margin-top: 5px;
+                    
+                    span {
+                        border-bottom: 1px dashed #5271FF;
+                    }
+                }
+            }
+        }
+    }
+    .sub-catalog-item .sub-catalog-button {
+        height: 48px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner-content-right .law a {
+        font-size: 13px;
+        line-height: 15px;
+
+        span {
+            font-size: 11px;
+            line-height: 15px;
+        }
+    }
+
+    .catalog .catalog-right-content {
+        min-width: 200px !important;
+        .cart {
+            width: 140px !important;
+            margin: 2px !important;
+            margin-bottom: 5px !important;
+        }
+    }
+}
+
+@media screen and (min-width: 570px) {
+    .header-inner-mobile-2 {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .header-inner-mobile,
+    .mobile-menu,
+    .whats {
+        display: none !important;
+    }
+}
